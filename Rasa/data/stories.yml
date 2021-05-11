@@ -1,0 +1,86 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask what is climate change
+  steps:
+  - intent: ask_what_is_climate_change
+  - action: utter_explain_climate_change
+  - action: utter_more_questions
+
+- story: ask reasons for climate change
+  steps:
+  - intent: ask_why_climate_change_happens
+  - action: utter_explain_reasons_climate_change
+  - action: utter_more_questions
+
+- story: intro learn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: learn
+  - action: utter_1)
+
+- story: intro action
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: actions
+  - action: utter_2)
+
+- story: action_clothing
+  steps:
+  - intent: clothing
+  - action: utter_clothing
+
+- story: action_food
+  steps:
+  - intent: food
+  - action: utter_food
+
+- story: action_travel
+  steps:
+  - intent: travel
+  - action: utter_travel
+  
+
+- story: intro data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data
+  - action: utter_3)
+
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_what is climate change
+  - action: utter_explain_climate_change
+  

@@ -1,0 +1,67 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ask_what_is_climate_change
+- ask_why_climate_change_happens
+- learn
+- actions
+- data
+- food
+- clothing
+- travel
+
+
+responses:
+
+  utter_greet:
+  - text: "Hey, I'm your Green Buddy. How can I help you?"
+    buttons:
+    - title: "Questions about climate change"
+      payload: "/learn"
+    - title: "Advice to do better "
+      payload: "/actions"
+    - title: "Real life examples"
+      payload: "/data"
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_explain_climate_change:
+  - text: Good that you're interested in this important topic! Climate change is a natural phenomen which includes both global warming driven by human-induced emissions of greenhouse gases and the resulting large-scale shifts in weather patterns.
+  utter_explain_reasons_climate_change:
+  - text: greenhouse gases, carbon cycle blablabla
+  utter_1):
+  - text: Great, go ahead and ask your questions.
+  utter_2):
+  - text: "Great, I'm happy to help you become more environmental-friendly. I can give you advise in the following categories: Clothing, Food, Travel. What is your interest?"
+  utter_3):
+  - text: This category is not yet available.
+  utter_clothing:
+  - text: Here is some advice about clothing.
+  utter_food:
+  - text: Here is some advice about food.
+  utter_travel:
+  - text: Here is some advice about travelling.
+
+  utter_more_questions: 
+  - text: "Do you have more questions?"
+
+
+actions:
+- utter_explain_climate_change
