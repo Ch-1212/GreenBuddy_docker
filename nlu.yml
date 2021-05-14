@@ -5,6 +5,7 @@ nlu:
     - hey
     - hello
     - hi
+    - heey
     - hello there
     - good morning
     - good evening
@@ -71,6 +72,7 @@ nlu:
     - my day was horrible
     - I am sad
     - I don't feel very well
+    - i am not feeling great
     - I am disappointed
     - super sad
     - I'm so sad
@@ -94,6 +96,7 @@ nlu:
   examples: |
     - What is climate change?
     - What does climate change mean?
+    - What means climate change?
     - I don't understand climate change
     - Explain climate change
     - what is climate change
@@ -105,22 +108,40 @@ nlu:
     - What are the reasons for climate change?
     - Why does climate change happen?
 
+- intent: critical_question
+  examples: |
+    - how can we be sure human made climate change exists?
+    - Is climate change real?
+    - what evidence is there?
+    - what evidence is there that climate change exists?
+    - I don´t believe in human made climate change.
+  
 - intent: learn
   examples: |
     - I have questions about climate change
     - 1
     - questions
+    
 - intent: actions
   examples: |
     - I want to know what I can do better
     - 2
     - suggestions
+    - what can I do to help fight the climate crises?
+    - what can I do in my daily life?
+    - how should I change my habits?
+    - should I change my behaviour?
+    - do you have some tips what I can do?
+    - how can I make a difference?
+    - how can I create an impact?
+    - what can i do to mitigate the effects of climate change?
 
 - intent: data
   examples: |
     - I'm interested in real life data
     - 3
     - examples
+    - how can we measure climate change?
 
 - intent: clothing
   examples: |
